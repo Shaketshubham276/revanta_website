@@ -1,7 +1,8 @@
 import React from "react";
 import './App.css';
-import NavBar from './components/NavBar';
-import { Gallery } from "./components/Gallery";
+import NavBar from './components/js/NavBar';
+import { Gallery } from "./components/js/Gallery";
+
 import {
   BrowserRouter as Router,
 
@@ -12,16 +13,18 @@ import {
 function App() {
   return (
     <>
-    <Router>
+    {/* <Router> */}
       <NavBar/>
-      <div className="container">
+      <Gallery/>
+      <samosa/>
+      {/* <div className="container">
         <Routes>
           
-          <Route exact path="/about" element={<Gallery/>}></Route>
+          <Route exact path="/gallery" element={<Gallery/>}></Route>
 
-        </Routes>
-      </div>
-    </Router>
+        </Routes> */}
+      {/* </div> */}
+    {/* // </Router> */}
       
     </>
   );
