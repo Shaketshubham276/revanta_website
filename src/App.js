@@ -1,8 +1,12 @@
+import React from "react";
+import Footer from "./components/Footer";
 
-function App() {
+const App = () => {
   return (
-    <h1>Whatsup</h1>
+    <>
+      <Footer />
+    </>
   );
-}
+};
 
 export default App;
